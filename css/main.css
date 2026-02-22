@@ -34,16 +34,23 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 5% 10px 0;
-    position: absolute;
     width: 100%;
     background-color: white;
     opacity: 95%;
 }
 
 .logo {
-    min-width: 250px;
+    max-width: 250px;
     padding: 0;
     margin: 0;
+    height: auto;
+    display: block;
+}
+
+.logo-link {
+    max-width: 250px;
+    height: auto;
+    display: block;
 }
 
 .navbar a {
@@ -70,11 +77,13 @@
 .hero {
     justify-content: center;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-image {
     display: flex;
-    max-width: 100%;
+    width: 100%;
     position: relative;
     z-index: -1;
 }
@@ -82,7 +91,15 @@
 .hero-text {
     font-family: 'Playball', sans-serif;
     font-style: italic;
-    font-size: 40px;
+    font-size: 4em;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 90%);
+    background-color: var(--cream);
+    width: 100%;
+    opacity: 90%;
 }
 
 .computerImage {
@@ -102,13 +119,36 @@
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s;
+    box-shadow: 5px 5px 10px 2px gray;
 }
 
 .contact:hover {
     background-color: #85b3b3;
 }
 
-@media (max-width: 1000px) {
+footer {
+        text-align: center;
+        font-family: 'Mona Sans', sans-serif;
+        background-color: var(--orange);
+        display: flex;
+        padding: 30px 20px;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    footer p {
+        margin-top: 5px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: black;
+    }
+
+@media (max-width: 1200px) {
 
     html, body {
         overflow-x: clip;
@@ -151,6 +191,7 @@
 
     #links a.active {
         background-color: var(--orange);
+        color: black;
     }
     
     .navbar #links {
@@ -159,6 +200,7 @@
         overflow: hidden;
         background-color: var(--teal);
         transition: max-height 0.4s ease-out;
+        color: white;
     }
 
     .navbar #links.open {
@@ -211,6 +253,7 @@
     #links a {
         background-color: var(--teal);
         font-size: 2em;
+        color: white;
     }
 
     body {
@@ -267,6 +310,14 @@
         padding-bottom: 5px;
         border-radius: 15px;
         margin-top: 50px;
+        position: static;
+        background-color: transparent;
+        top: auto;
+        left: auto;
+        transform: none;
+        font-size: 35px;
+        opacity: 100%;
+        width: auto;
     }
 
     .computerImage {
@@ -364,7 +415,7 @@
         padding: 5px 15px;
         font-family: 'Mona Sans', sans-serif;
         text-decoration: none;
-        color: black;
+        color: white;
         text-align: center;
         cursor: pointer;
         transition: background-color 0.3s;
@@ -380,6 +431,9 @@
         text-align: center;
         font-family: 'Mona Sans', sans-serif;
         background-color: var(--orange);
+        display: block;
+        font-size: 1em;
+        padding: 10px;
     }
 
     footer p {
