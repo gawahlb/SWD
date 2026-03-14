@@ -29,6 +29,10 @@
     display: none;
 }
 
+main {
+    text-align: center;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -115,7 +119,7 @@
     padding: 5px 15px;
     font-family: 'Mona Sans', sans-serif;
     text-decoration: none;
-    color: black;
+    color: white;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -126,27 +130,101 @@
     background-color: #85b3b3;
 }
 
+.info {
+    margin: 3em;
+    padding: 15px;
+    font-family: 'Mona Sans', sans-serif;
+}
+
+.info p {
+    font-size: 20px;
+}
+
+.info h3 {
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.info a {
+    text-decoration: none;
+}
+
+.info a:visited {
+    color: blue;
+}
+
+.statement {
+    text-align: center;
+    background-color: var(--orange);
+    font-family: 'Nothing You Could Do', sans-serif;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.cta {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.cta p {
+    font-size: 50px;
+    font-family: 'Mona Sans', sans-serif;
+}
+
+.headshot {
+    margin: 30px 20px;
+    max-width: 500px;
+    grid-column: 1/2;
+}
+
+.name {
+    margin: 20px 15px;
+    font-family: 'Mona Sans', sans-serif;
+    font-size: 50px;
+    grid-column: 2/3;
+}
+
+.bio {
+    margin: 20px 30px;
+    font-family: 'Mona Sans', sans-serif;
+    font-size: 30px;
+    grid-column: 2/3;
+}
+
+.gabe, .stephen {
+    grid-column: 2/3;
+    margin: auto;
+    text-align: left;
+}
+
+.about-page {
+    display: grid;
+    grid-template-columns: 600px auto;
+    grid-template-rows: auto auto;
+    margin: 50px 100px;
+}
+
 footer {
-        text-align: center;
-        font-family: 'Mona Sans', sans-serif;
-        background-color: var(--orange);
-        display: flex;
-        padding: 30px 20px;
-        gap: 30px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 1.5em;
+    text-align: center;
+    font-family: 'Mona Sans', sans-serif;
+    background-color: var(--orange);
+    display: flex;
+    padding: 30px 20px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
     }
 
-    footer p {
-        margin-top: 5px;
-    }
+footer p {
+    margin-top: 5px;
+}
 
-    footer a {
-        text-decoration: none;
-        color: black;
-    }
+footer a {
+    text-decoration: none;
+    color: black;
+}
 
 @media (max-width: 1200px) {
 
@@ -334,22 +412,12 @@ footer {
         margin-top: 0;
     }
 
-    .info {
-        margin: 3em;
-        padding: 15px;
-        font-family: 'Mona Sans', sans-serif;
-    }
-
-    .info h3 {
-        margin-bottom: 50px;
-    }
-
     .info p {
         font-size: 15px;
     }
 
-    .info a {
-        text-decoration: none;
+    .info h3 {
+        font-size: 20px;
     }
 
     .ourCost {
@@ -357,9 +425,7 @@ footer {
     }
 
     .statement {
-        text-align: center;
-        background-color: var(--orange);
-        font-family: 'Nothing You Could Do', sans-serif;
+        font-size: 20px;
     }
 
     .headshot {
@@ -381,7 +447,6 @@ footer {
     }
 
     .cta {
-        text-align: center;
         margin: 3em 0;
     }
 
