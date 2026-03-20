@@ -204,6 +204,45 @@ main {
     margin: 50px 100px;
 }
 
+.pricing {
+    width: 80%;
+    border-collapse: collapse;
+    border: solid black 1px;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Mona Sans', sans-serif;
+    font-size: 30px;
+}
+
+.pricing td, th {
+    border: solid black 1px;
+    padding: 5px;
+}
+
+.disclaimer {
+    margin-bottom: 2em;
+    font-size: 25px;
+}
+
+.contact-info {
+    font-family: 'Mona Sans', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-info h1 {
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+.contact-info a:visited {
+    color: blue;
+}
+
 footer {
     text-align: center;
     font-family: 'Mona Sans', sans-serif;
@@ -356,6 +395,17 @@ footer a {
         text-align: center;
     }
 
+    .about-page {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .gabe, .stephen {
+        text-align: center;
+    }
+
     .logo {
         display: none;
     }
@@ -383,6 +433,7 @@ footer a {
     }
 
     .hero-text {
+        font-family: 'Playball', sans-serif;
         text-align: center;
         margin: 0 15px;
         padding-bottom: 5px;
